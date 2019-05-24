@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Scrum</h1>Development Methodology
+			</section>
+			<section>
+				<p style="font-weight:bold; font-size: 60px; color:aqua">Winston Royce's Waterfall Model (1970)</p>
+				<ol class="fragment fade-bottom" style="font-size: 30px">
+					<li>Each phase should pass iteratively to the next</li>
+					<li>The entire process should be exercised twice before release </li>
+					<li>Royce knew that a single pass will fail</li>
+				</ol>
+				<img src="./images/waterfal.png">
+			</section>
+			<section>
+				<p>
+					<p style="font-weight:bold; font-size: 60px; color:aqua">Agile methodology</p> (Agile Manifesto by
+					“Agile Alliance” 2001) assigns next values:
+				</p>
+				<ul style="font-size: 30px">
+					<li class="fragment fade-bottom"><span
+							style="font-size: 50px; font-weight:bold; color:palegreen">Individuals and
+							interactions</span> over processes and tools</li>
+					<li class="fragment fade-bottom"><span
+							style="font-size: 50px; font-weight:bold; color:palegreen">Working software</span> over
+						comprehensive documentation</li>
+					<li class="fragment fade-bottom"><span
+							style="font-size: 50px; font-weight:bold; color:palegreen">Customer collaboration</span>
+						over contract negotiation</li>
+					<li class="fragment fade-bottom"><span
+							style="font-size: 50px; font-weight:bold; color:palegreen">Responding to change</span> over
+						following a plan</li>
+				</ul>
+				<p class="fragment fade-bottom" style="font-style: italic;">That is, while there is value in the items
+					on the right, we value the items on the left more. </p>
+			</section>
+			<section>
+				<img src="./images/agilevswater.jpg">
+			</section>
+			<section>
+				<h3 style="color:aqua">What's scrum?</h3>
+				<ul>
+					<li style="font-size: 50px; color: plum; font-weight:bold" class="fragment fade-left">Scrum development team</li>
+					<li style="font-size: 50px; color: plum; font-weight:bold" class="fragment fade-left">ScrumMaster</li>
+					<li style="font-size: 50px; color: plum; font-weight:bold" class="fragment fade-left">The product owner (PO)</li>
+				</ul>
+			</section>
+			<section>
+				<h3 style="color:aqua">What's involved?</h3>
+				<ul>
+					<li class="fragment fade-right" style="font-size: 50px; color: plum;">Sprints</li>
+					<li class="fragment fade-right" style="font-size: 50px; color: plum;">Sprint backlog</li>
+					<li class="fragment fade-right" style="font-size: 50px; color: plum;">Daily Scrum meeting</li>
+					<li class="fragment fade-right" style="font-size: 50px; color: plum;">Sprint review</li>
+					<li class="fragment fade-right" style="font-size: 50px; color: plum;">Sprint retrospective</li>
+				</ul>
+			</section>
+			<section>
+				<h3 style="color:aqua">Scrum Process: The Main Artifacts</h3>
+				<ul style="text-align: center;">
+					<li class="fragment fade-right" style="color: plum">Product itself</li>
+					<li class="fragment fade-right" style="color: plum">Product backlog</li>
+					<li class="fragment fade-right" style="color: plum">User stories
+						<ul style="list-style: none; color: white; font-size: 30px;">
+							<li>"As a <span style="font-style: italic; color:palegreen">[type of user]</span>, I want <span
+									style="font-style: italic; color:palegreen">[some goal]</span> so that <span
+									style="font-style: italic; color:palegreen">[some
+									reason]"</span>.</li>
+							<li style="font-style: italic; color:palegreen">"As a user, I can backup my entire hard drive."</li>
+						</ul>
+					</li>
+					<li class="fragment fade-right" style="color: plum">Sprint burndown chart </li>
+					<li class="fragment fade-right" style="color: plum">Release burndown chart</li>
+				</ul>
+			</section>			
+			<section>
+					<img src="./images/ScrumPrinciples.png">
+				</section>
+			<section>
+				<h4>Agile methodology is as a racecar</h4>
+				<img src="./images/car.jpg">
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>
